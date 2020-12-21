@@ -16,8 +16,6 @@ for(row in input){
   allergens <- unique(c(allergens, all))
   }
 
-M <- data.frame(matrix(TRUE, nrow = 0, ncol = length(allergens)+1))
-colnames(M)<-c("ingredient", allergens)
 
 #run 2
 r.all <- matrix(FALSE, nrow = length(input), ncol = length(allergens))
